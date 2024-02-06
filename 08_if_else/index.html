@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Угадайка</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+    <header>
+        <h1>Игра Угадайка</h1>
+        </header>
+        <main>
+    <div class="container">
+        <div class="gameBoard">              
+            <div class="collapse" id="collapse-2">
+                <div>
+                    <div id="hat">
+                        <p>Задайте два числа, затем загадайте любое в их диапозоне</p>
+                        </div> 
+                    <form action="#">
+                        <label>
+                            Минимальное число
+                            <input id="inpMin" type="text" placeholder="0">
+                        </label>
+                    </form>
+                    <form action="#">
+                        <label>
+                            Максимальное число
+                            <input id="inpMax" type="text" placeholder="0">
+                        </label>
+                    </form>
+                </div>
+            </div>
+                <div class="collapse hide" id="collapse-1">
+                    <div>
+                        <p class="m">Вопрос №<span id="orderNumberField">1</span></p>
+                            <h3 class="card"><span id="answerField">Вы загадали число ?</span></h3>
+                        <div class="btn-group">
+                            <button class="btn info" id="btnLess">&#129047;<br>меньше</button>
+                            <button class="btn success" id="btnEqual">Верно!</button>
+                            <button class="btn info" id="btnOver">больше<br>&#129045;</button>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-link" id="btnRetry">Заново</button>
+                        </div>
+                    </div>
+                </div>
+                <button id="collapseBut" class="collapse-button" data-toggle ="collapse-1">Начнем!</button>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <span>&copy;&nbsp;Sutormin</span>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,91 @@
+body{
+    background-repeat: no-repeat;
+    background-image: url("https://img.freepik.com/free-vector/paper-style-white-monochrome-background_52683-66443.jpg?w=826&t=st=1707180148~exp=1707180748~hmac=403cffbcd5867d0b5277b70ca1a8a8b954e91cdfd6343d033e6b434f2b48b077");
+    background-size: cover; 
+}
+.gameBoard{
+    border: 2px solid black;
+    font-family: 'Open Sans', monospace;
+    width: 350px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 0, 0.452);
+}
+.btn {
+    background-color: rgba(45, 45, 153, 0.671);
+    border: 2px solid black;
+    margin: 12px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: blueviolet;
+}
+header{
+    text-align: center;
+}
+.collapse{
+    
+    display: grid;
+    transition: all ease 0.5s;
+    grid-template-rows: 1fr;
+    padding: 10px;
+}
+.collapse-button{
+    cursor: pointer;
+    margin: 10px;
+}
+
+.collapse.hide{
+    grid-template-rows: 0fr;
+    padding: 0px;
+}
+
+.btn:hover{
+    background-color: blueviolet;
+}
+.btn-group{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.collapse>div{
+    overflow: hidden;
+}
+.bg-yellow{
+
+    margin: 10px 0;
+}
+#hat{
+    background: rgb(111, 0, 255);
+    margin: 20px;
+    border: 0.2rem solid black;
+}
+.notification {
+    position: fixed;
+    z-index: 1000;
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 20px;
+    background: white;
+    text-align: center;
+  }
+  
+  .alarma {
+    background: #b80000;
+    color: yellow;
+  }
+  .card-footer{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  .card, .m {
+    text-align: center;
+  }
+  form{
+    justify-content: center;
+  }
+
